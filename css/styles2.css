@@ -1164,7 +1164,8 @@ aside .search-result {
     z-index: 1;
 }
 .guide-card_item:hover {
-    border: none;
+    border: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     background-image: linear-gradient(-61.0deg, #c28cf9 -7%, #964ee0 107%);
     box-shadow: 0px 4px 9px 0px rgba(190,114,238,0.46);
 }
@@ -2039,9 +2040,19 @@ aside .search-result {
         line-height: 25px;
         margin-bottom: 15px;
     }
+    .guide .definition_title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
     .definition p {
         font-size: 15px;
         line-height: 22px;
+        margin-bottom: 12px;
+    }
+    .definition p {
+        font-size: 12px;
+        line-height: 16px;
         margin-bottom: 12px;
     }
     .definition ul li {
@@ -2227,6 +2238,18 @@ aside .search-result {
         border-right: none;
         border-top: none;
     }
+    .guide-search_mob input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    .guide-search_mob input::-moz-placeholder {
+        font-size: 16px;
+    }
+    .guide-search_mob input:-moz-placeholder {
+        font-size: 16px;
+    }
+    .guide-search_mob input:-ms-input-placeholder {
+        font-size: 16px;
+    }
     .guide-search_mob form button {
         position: absolute;
         top: 50%;
@@ -2298,7 +2321,7 @@ aside .search-result {
     .guide-card_mob .mob-item_link {
         position: relative;
         display: inline-block;
-        margin-top: 13px;
+        margin-top: 9px;
         font-family: var(--font_family);
         font-size: 14px;
         line-height: 18px;
@@ -2392,6 +2415,18 @@ aside .search-result {
         height: 40px;
         border: 1px solid #e1e1e1;
         padding-left: 16px;
+    }
+    .guide .definition_search .input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .guide .definition_search .input::-moz-placeholder {
+        font-size: 14px;
+    }
+    .guide .definition_search .input:-moz-placeholder {
+        font-size: 14px;
+    }
+    .guide .definition_search .input:-ms-input-placeholder {
+        font-size: 14px;
     }
     .guide .definition_search form .submit_btn {
         position: absolute;
